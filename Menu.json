@@ -1,1 +1,36 @@
+{
+  "restaurant": {
+    "nom": "Restaurant Atlas",
+    "telephone": "212600000000"
+  },
 
+  "categories": [
+    {
+      "nom": "Burgers",
+      "emoji": "🍔",
+
+      "produits": [
+        {
+          "nom": "Double Burger",
+          "prix": 75,
+          "image": "images/burger.jpg",
+          "description": "Double steak et cheddar"
+        }
+      ]
+    },
+
+    {
+      "nom": "Tacos",
+      "emoji": "🌮",
+
+      "produits": [
+        {
+          "nom": "Tacos Poulet",
+          "prix": 55,
+          "image": "images/tacos.jpg",
+          "description": "Poulet mariné"
+        }
+      ]
+    }
+  ]
+}
