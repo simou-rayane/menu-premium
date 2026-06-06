@@ -5,17 +5,27 @@
   },
 
   "categories": [
+
     {
       "nom": "Burgers",
       "emoji": "🍔",
 
       "produits": [
+
         {
           "nom": "Double Burger",
           "prix": 75,
           "image": "images/burger.jpg",
           "description": "Double steak et cheddar"
+        },
+
+        {
+          "nom": "Chicken Burger",
+          "prix": 65,
+          "image": "images/burger.jpg",
+          "description": "Poulet croustillant"
         }
+
       ]
     },
 
@@ -24,13 +34,16 @@
       "emoji": "🌮",
 
       "produits": [
+
         {
           "nom": "Tacos Poulet",
           "prix": 55,
           "image": "images/tacos.jpg",
           "description": "Poulet mariné"
         }
+
       ]
     }
+
   ]
 }
