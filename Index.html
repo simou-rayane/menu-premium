@@ -2,16 +2,12 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
+<title>Restaurant Atlas</title>
 
-<title>Restaurant</title>
-
-<link rel="stylesheet"
-href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -21,22 +17,26 @@ href="style.css">
 
 <img
 src="images/logo.png"
-class="logo">
+class="logo"
+alt="Logo Restaurant">
 
-<h1 id="restaurant-name"></h1>
+<h1 id="restaurant-name">
+Chargement...
+</h1>
 
 </header>
 
 <img
 src="images/banner.jpg"
-class="banner">
+class="banner"
+alt="Bannière Restaurant">
 
 <div class="search">
 
 <input
 type="text"
 id="search"
-placeholder="Rechercher un plat">
+placeholder="🔍 Rechercher un plat">
 
 </div>
 
@@ -45,7 +45,8 @@ id="categories"
 class="categories">
 </div>
 
-<div id="menu"></div>
+<div id="menu">
+</div>
 
 <div class="panier">
 
@@ -65,7 +66,7 @@ DH
 class="whatsapp"
 onclick="commander()">
 
-Commander sur WhatsApp
+📱 Commander sur WhatsApp
 
 </button>
 
