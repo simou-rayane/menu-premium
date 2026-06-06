@@ -190,7 +190,7 @@ total+
 " DH";
 
 window.open(
-"https://wa.me/"
+"https://wa.me/212610164989"
 +
 data.restaurant.telephone
 +
