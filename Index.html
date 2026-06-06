@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>Restaurant</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<img
+src="images/logo.png"
+class="logo">
+
+<h1 id="restaurant-name"></h1>
+
+</header>
+
+<img
+src="images/banner.jpg"
+class="banner">
+
+<div class="search">
+
+<input
+type="text"
+id="search"
+placeholder="Rechercher un plat">
+
+</div>
+
+<div
+id="categories"
+class="categories">
+</div>
+
+<div id="menu"></div>
+
+<div class="panier">
+
+<div id="panier-contenu">
+Panier vide
+</div>
+
+<h2>
+
+Total :
+<span id="total">0</span>
+DH
+
+</h2>
+
+<button
+class="whatsapp"
+onclick="commander()">
+
+Commander sur WhatsApp
+
+</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
