@@ -1,7 +1,7 @@
 {
   "restaurant": {
     "nom": "Restaurant Atlas",
-    "telephone": "212610164989"
+    "telephone": "212610164989",
     "adresse": "Casablanca",
     "livraison": "Oui"
   },
@@ -74,7 +74,7 @@
           "image": "images/pizza.jpg",
           "disponible": true,
           "populaire": true
-        }
+        },
 
 {
 "id":5,
