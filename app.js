@@ -38,6 +38,10 @@ ${cat.emoji} ${cat.nom}
 
 cat.produits.forEach(p=>{
 
+  if(!p.disponible){
+return;
+}
+
 let prixAffiche = p.prix + " DH";
 
 if(p.promo){
