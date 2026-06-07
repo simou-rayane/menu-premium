@@ -29,7 +29,7 @@
           "id": 2,
           "nom": "Chicken Burger",
           "prix": 65,
-          "promo": 65,
+          "promo": 60,
           "description": "Poulet croustillant",
           "image": "images/burger.jpg",
           "disponible": true,
@@ -46,10 +46,10 @@
       "produits": [
 
         {
-          "id": 1,
+          "id": 3,
           "nom": "Tacos Poulet",
           "prix": 55,
-          "promo": 65,
+          "promo": 52,
           "description": "Poulet mariné",
           "image": "images/tacos.jpg",
           "disponible": true,
@@ -66,16 +66,26 @@
       "produits": [
 
         {
-          "id": 1,
+          "id": 4,
           "nom": "Pizza Viande Hachée",
           "prix": 55,
-          "promo": 65,
+          "promo": 50,
           "description": "Pâte Du Chef",
           "image": "images/pizza.jpg",
           "disponible": true,
           "populaire": true
         }
 
+{
+"id":5,
+"nom":"Pizza Fruits de Mer",
+"prix":90,
+"description":"Pizza maison",
+"image":"images/pizza.jpg",
+"disponible":true,
+"populaire":false
+}
+        
       ]
     }
 
