@@ -42,6 +42,13 @@ cat.produits.forEach(p=>{
 return;
 }
 
+let badge = "";
+
+if(p.populaire){
+badge =
+"<span class='badge'>🔥 Populaire</span>";
+}
+  
 let prixAffiche = p.prix + " DH";
 
 if(p.promo){
