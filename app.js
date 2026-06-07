@@ -38,6 +38,19 @@ ${cat.emoji} ${cat.nom}
 
 cat.produits.forEach(p=>{
 
+let prixAffiche = p.prix + " DH";
+
+if(p.promo){
+
+prixAffiche = `
+<s>${p.prix} DH</s>
+<span style="color:red;font-weight:bold;">
+ ${p.promo} DH
+</span>
+`;
+
+}
+
 html+=`
 
 <div class="produit">
@@ -51,7 +64,11 @@ html+=`
 <p>${p.description}</p>
 
 <div class="prix">
-${p.prix} DH
+${prixAffiche}
+</div>
+
+<div class="prix">
+${prixAffiche}
 </div>
 
 <div class="actions">
