@@ -20,10 +20,18 @@ function afficherMenu(){
 
 let html="";
 
+let boutons="";
+  
 data.categories.forEach(cat=>{
 
-html+=`
-<h2 style="padding:15px">
+boutons += `
+<button onclick="document.getElementById('${cat.nom}').scrollIntoView()">
+${cat.emoji} ${cat.nom}
+</button>
+`;
+
+html += `
+<h2 id="${cat.nom}" style="padding:15px">
 ${cat.emoji} ${cat.nom}
 </h2>
 `;
