@@ -7,15 +7,20 @@ fetch("menu.json")
 
 data=json;
 
+document.getElementById(
+"restaurant-name"
+).innerText=
+data.restaurant.nom;
+
   document.getElementById(
 "restaurant-address"
 ).innerText =
 data.restaurant.adresse;
 
-document.getElementById(
-"restaurant-name"
-).innerText=
-data.restaurant.nom;
+  document.getElementById(
+"restaurant-phone"
+).innerText =
+"📞 " + data.restaurant.telephone;
 
 afficherMenu();
 
