@@ -208,3 +208,29 @@ msg
 );
 
 }
+
+document
+.getElementById("search")
+.addEventListener("keyup", function(){
+
+let texte =
+this.value.toLowerCase();
+
+document
+.querySelectorAll(".produit")
+.forEach(carte=>{
+
+if(
+carte.innerText
+.toLowerCase()
+.includes(texte)
+){
+carte.style.display="block";
+}
+else{
+carte.style.display="none";
+}
+
+});
+
+});
