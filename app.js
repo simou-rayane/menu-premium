@@ -113,7 +113,7 @@ onclick="retirer('${p.nom}')">
 
 `;
 
-
+});
 });
 
 document.getElementById("categories").innerHTML = boutons;
