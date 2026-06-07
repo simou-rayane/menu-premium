@@ -194,3 +194,29 @@ color:white;
 .dark header{
 background:#000;
 }
+
+.search button{
+margin-top:10px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#333;
+color:white;
+cursor:pointer;
+}
+
+.langues{
+display:flex;
+justify-content:center;
+gap:10px;
+padding:15px;
+}
+
+.langues button{
+padding:10px 15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+}
