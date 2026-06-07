@@ -227,6 +227,13 @@ let texte =
 this.value.toLowerCase();
 
 document
+.getElementById("search")
+.addEventListener("keyup", function(){
+
+let texte =
+this.value.toLowerCase();
+
+document
 .querySelectorAll(".produit")
 .forEach(carte=>{
 
@@ -241,12 +248,12 @@ else{
 carte.style.display="none";
 }
 
+});
+
+});
+
 function toggleDarkMode(){
 
 document.body.classList.toggle("dark");
 
 }
-  
-});
-
-});
