@@ -118,6 +118,14 @@ refresh();
 
 function refresh(){
 
+let compteur = 0;
+
+for(let nom in panier){
+compteur += panier[nom].qte;
+}
+
+document.getElementById("cart-count").innerText = compteur;
+  
 let html="";
 let total=0;
 
