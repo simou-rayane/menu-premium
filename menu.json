@@ -2,6 +2,8 @@
   "restaurant": {
     "nom": "Restaurant Atlas",
     "telephone": "212610164989"
+    "adresse": "Casablanca",
+    "livraison": "Oui"
   },
 
   "categories": [
@@ -13,17 +15,25 @@
       "produits": [
 
         {
+          "id": 1,
           "nom": "Double Burger",
           "prix": 75,
+          "promo": 65,
+          "description": "Double steak et cheddar",
           "image": "images/burger.jpg",
-          "description": "Double steak et cheddar"
+          "disponible": true,
+          "populaire": true
         },
 
         {
+          "id": 2,
           "nom": "Chicken Burger",
           "prix": 65,
+          "promo": 65,
+          "description": "Poulet croustillant",
           "image": "images/burger.jpg",
-          "description": "Poulet croustillant"
+          "disponible": true,
+          "populaire": true
         }
 
       ]
@@ -36,10 +46,34 @@
       "produits": [
 
         {
+          "id": 1,
           "nom": "Tacos Poulet",
           "prix": 55,
+          "promo": 65,
+          "description": "Poulet mariné",
           "image": "images/tacos.jpg",
-          "description": "Poulet mariné"
+          "disponible": true,
+          "populaire": true
+        }
+
+      ]
+    },
+    
+    {
+      "nom": "Pizza",
+      "emoji": "🍕",
+
+      "produits": [
+
+        {
+          "id": 1,
+          "nom": "Pizza Viande Hachée",
+          "prix": 55,
+          "promo": 65,
+          "description": "Pâte Du Chef",
+          "image": "images/pizza.jpg",
+          "disponible": true,
+          "populaire": true
         }
 
       ]
