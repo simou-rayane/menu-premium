@@ -85,6 +85,8 @@ onclick="retirer(
 
 });
 
+document.getElementById("categories").innerHTML = boutons;
+  
 document
 .getElementById("menu")
 .innerHTML=html;
