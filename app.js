@@ -48,22 +48,17 @@ ${cat.emoji} ${cat.nom}
 
 cat.produits.forEach(p=>{
 
-  if(!p.disponible){
+  if(p.disponible === false){
 return;
 }
 
-<h3>
-${badge}
-${p.nom}
-</h3>
-  
 let badge = "";
 
 if(p.populaire){
 badge =
 "<span class='badge'>🔥 Populaire</span>";
 }
-  
+
 let prixAffiche = p.prix + " DH";
 
 if(p.promo){
@@ -71,9 +66,11 @@ if(p.promo){
 prixAffiche = `
 <s>${p.prix} DH</s>
 <span style="color:red;font-weight:bold;">
- ${p.promo} DH
+${p.promo} DH
 </span>
 `;
+
+}
 
 }
 
@@ -85,13 +82,12 @@ html+=`
 
 <div class="info">
 
-<h3>${p.nom}</h3>
+<h3>
+${badge}
+${p.nom}
+</h3>
 
 <p>${p.description}</p>
-
-<div class="prix">
-${prixAffiche}
-</div>
 
 <div class="prix">
 ${prixAffiche}
