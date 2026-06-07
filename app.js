@@ -231,6 +231,12 @@ else{
 carte.style.display="none";
 }
 
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+  
 });
 
 });
