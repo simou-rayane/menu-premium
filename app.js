@@ -42,6 +42,11 @@ cat.produits.forEach(p=>{
 return;
 }
 
+<h3>
+${badge}
+${p.nom}
+</h3>
+  
 let badge = "";
 
 if(p.populaire){
