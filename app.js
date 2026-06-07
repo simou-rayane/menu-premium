@@ -48,33 +48,31 @@ ${cat.emoji} ${cat.nom}
 
 cat.produits.forEach(p=>{
 
-  if(p.disponible === false){
+// Masquer les produits indisponibles
+if(p.disponible === false){
 return;
 }
 
+// Badge populaire
 let badge = "";
 
 if(p.populaire){
-badge =
-"<span class='badge'>🔥 Populaire</span>";
+badge = "<span class='badge'>🔥 Populaire</span>";
 }
 
+// Prix normal ou promo
 let prixAffiche = p.prix + " DH";
 
 if(p.promo){
-
 prixAffiche = `
 <s>${p.prix} DH</s>
 <span style="color:red;font-weight:bold;">
 ${p.promo} DH
 </span>
 `;
-
 }
 
-}
-
-html+=`
+html += `
 
 <div class="produit">
 
@@ -97,18 +95,13 @@ ${prixAffiche}
 
 <button
 class="plus"
-onclick="ajouter(
-'${p.nom}',
-${p.prix}
-)">
+onclick="ajouter('${p.nom}',${p.promo || p.prix})">
 +
 </button>
 
 <button
 class="moins"
-onclick="retirer(
-'${p.nom}'
-)">
+onclick="retirer('${p.nom}')">
 -
 </button>
 
@@ -120,7 +113,6 @@ onclick="retirer(
 
 `;
 
-});
 
 });
 
