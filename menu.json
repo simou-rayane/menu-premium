@@ -9,17 +9,29 @@
   "categories": [
 
     {
-      "nom": "Burgers",
+      "nom": {
+      "fr" : "Burgers",
+      "ar" : "برغر",
+      "en" : "Burgers"
+      }
       "emoji": "🍔",
-
+      
       "produits": [
 
         {
           "id": 1,
-          "nom": "Double Burger",
+          "nom": {
+            "fr" : "Double Burger",
+            "ar" : "برغر مزدوج",
+            "en" : "Double Burger"
+          }
           "prix": 75,
           "promo": 65,
-          "description": "Double steak et cheddar",
+          "description": {
+            "fr" : "Double steak et cheddar",
+            "ar" : "لحم مزدوج مع جبن شيدر",
+            "en" : "Double Beef and cheddar"
+          }
           "image": "images/burger.jpg",
           "disponible": true,
           "populaire": true
@@ -27,10 +39,18 @@
 
         {
           "id": 2,
-          "nom": "Chicken Burger",
+          "nom": {
+            "fr" : "Burger Poulet",
+            "ar" : "برغر دجاج",
+            "en" : "Chicken Burger"
+          }
           "prix": 65,
           "promo": 60,
-          "description": "Poulet croustillant",
+          "description": {
+            "fr" : "Poulet croustillant",
+            "ar" : "دجاج مقرمش",
+            "en" : "Chicken Crispy"
+          }
           "image": "images/burger.jpg",
           "disponible": true,
           "populaire": true
@@ -40,17 +60,29 @@
     },
 
     {
-      "nom": "Tacos",
+      "nom": {
+        "fr" : "Tacos",
+        "ar" : "طاكوس",
+        "en" : "Tacos"
+      }
       "emoji": "🌮",
 
       "produits": [
 
         {
           "id": 3,
-          "nom": "Tacos Poulet",
+          "nom": {
+            "fr" : "Tacos Poulet",
+            "ar" : "طاكوس دجاج",
+            "en" : "Tchicken Tacos"
+          }
           "prix": 55,
           "promo": 52,
-          "description": "Poulet mariné",
+          "description": {
+            "fr" : "Poulet mariné",
+            "ar" : "دجاج مشرمل",
+            "en" : "Mariened chicken"
+          }
           "image": "images/tacos.jpg",
           "disponible": true,
           "populaire": true
@@ -60,17 +92,29 @@
     },
     
     {
-      "nom": "Pizza",
+      "nom": {
+        "fr" : "Pizza",
+        "ar" : "بيتزا",
+        "en" : "Pizza"
+      }
       "emoji": "🍕",
 
       "produits": [
 
         {
           "id": 4,
-          "nom": "Pizza Viande Hachée",
+          "nom": {
+            "fr" : "Pizza Viande Hachée",
+            "ar" : "بيتزا كفتة",
+            "en" : "Pizza meat"
+          }
           "prix": 55,
           "promo": 50,
-          "description": "Pâte Du Chef",
+          "description": {
+            "fr" : "Pâte Du Chef",
+            "ar" :  "عجينة بيتزا شيف",
+            "en" : "Pizza Bread Chef"
+          }
           "image": "images/pizza.jpg",
           "disponible": true,
           "populaire": true
@@ -78,9 +122,17 @@
 
 {
 "id":5,
-"nom":"Pizza Fruits de Mer",
+"nom":{
+  "fr" : "Pizza Fruits de Mer",
+  "ar" : "بيتزا فواكه بحر",
+  "en" : "Pizza Sea Food"
+}
 "prix":90,
-"description":"Pizza maison",
+"description":{
+  "fr" : "Pizza maison",
+  "ar" : "بيتزا منزلية",
+  "en" : "Pizza House"
+}
 "image":"images/pizza.jpg",
 "disponible":true,
 "populaire":false
