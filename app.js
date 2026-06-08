@@ -1,3 +1,4 @@
+let langue = "fr";
 let data;
 let panier={};
 
@@ -82,10 +83,10 @@ html += `
 
 <h3>
 ${badge}
-${p.nom}
+${p.nom[langue]}
 </h3>
 
-<p>${p.description}</p>
+<p>${p.description[langue]}</p>
 
 <div class="prix">
 ${prixAffiche}
