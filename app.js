@@ -169,13 +169,7 @@ document.getElementById("cart-count").innerText = compteur;
   
 let html="";
 
-const params =
-new URLSearchParams(
-window.location.search
-);
 
-const table =
-params.get("table") || "Non spécifiée";
   
 let total=0;
 
@@ -220,6 +214,14 @@ document
 
 function commander(){
 
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+const table =
+params.get("table") || "Non spécifiée";
+  
 let total=0;
 
 let msg=
