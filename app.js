@@ -168,6 +168,15 @@ compteur += panier[nom].qte;
 document.getElementById("cart-count").innerText = compteur;
   
 let html="";
+
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+const table =
+params.get("table") || "Non spécifiée";
+  
 let total=0;
 
 for(let nom in panier){
@@ -216,6 +225,11 @@ let total=0;
 let msg=
 "Bonjour,%0A%0ACommande :%0A";
 
+msg +=
+"🪑 Table : " +
+table +
+"%0A%0A";
+  
 for(let nom in panier){
 
 let q=
