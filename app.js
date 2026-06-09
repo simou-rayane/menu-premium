@@ -38,10 +38,6 @@ document.getElementById("btn-appel")
 .onclick = () =>
 window.location.href =
 "tel:+" + data.restaurant.telephone;
-
-  
-
-
   
 afficherMenu();
 
@@ -116,13 +112,13 @@ ${prixAffiche}
 
 <button
 class="plus"
-onclick="ajouter('${p.nom.fr}',${p.promo || p.prix})"
+onclick="ajouter('${p.nom.fr}',${p.promo || p.prix})">
 +
 </button>
 
 <button
 class="moins"
-onclick="retirer('${p.nom.fr}')"
+onclick="retirer('${p.nom.fr}')">
 -
 </button>
 
