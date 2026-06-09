@@ -246,3 +246,21 @@ color:white;
 cursor:pointer;
 font-size:16px;
 }
+
+.liens-restaurant{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+padding:15px;
+}
+
+.liens-restaurant button{
+padding:10px 15px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+background:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+font-size:14px;
+}
