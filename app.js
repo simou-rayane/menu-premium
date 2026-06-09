@@ -42,7 +42,7 @@ ${cat.emoji} ${cat.nom[langue]}
 `;
 
 html += `
-<h2 id="${cat.nom[langue]}" style="padding:15px">
+<h2 id="id="cat-${cat.emoji}" style="padding:15px">
 ${cat.emoji} ${cat.nom[langue]}
 </h2>
 `;
