@@ -36,14 +36,14 @@ let boutons="";
 data.categories.forEach(cat=>{
 
 boutons += `
-<button onclick="document.getElementById('${cat.nom}').scrollIntoView()">
-${cat.emoji} ${cat.nom}
+<button onclick="document.getElementById('${cat.nom[langue]}').scrollIntoView()">
+${cat.emoji} ${cat.nom[langue]}
 </button>
 `;
 
 html += `
-<h2 id="${cat.nom}" style="padding:15px">
-${cat.emoji} ${cat.nom}
+<h2 id="${cat.nom[langue]}" style="padding:15px">
+${cat.emoji} ${cat.nom[langue]}
 </h2>
 `;
 
