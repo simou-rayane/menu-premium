@@ -1,6 +1,6 @@
-let langue = "fr";
 let data;
 let panier={};
+let langue = "fr";
 
 fetch("menu.json")
 .then(r=>r.json())
@@ -293,5 +293,20 @@ carte.style.display = "none";
 function toggleDarkMode(){
 
 document.body.classList.toggle("dark");
+
+}
+
+function changerLangue(nouvelleLangue){
+
+langue = nouvelleLangue;
+
+if(langue==="ar"){
+document.body.dir="rtl";
+}
+else{
+document.body.dir="ltr";
+}
+
+afficherMenu();
 
 }
