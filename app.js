@@ -50,11 +50,8 @@ data.restaurant.maps,
 
 };
 
-  document.getElementById(
-"restaurant-phone"
-).innerText =
-"📞 " + data.restaurant.telephone;
 
+  
 afficherMenu();
 
 });
