@@ -39,16 +39,7 @@ document.getElementById("btn-appel")
 window.location.href =
 "tel:+" + data.restaurant.telephone;
 
-  document
-.getElementById("btn-itineraire")
-.onclick = function(){
-
-window.open(
-data.restaurant.maps,
-"_blank"
-);
-
-};
+  
 
 
   
