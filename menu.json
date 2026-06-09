@@ -9,11 +9,7 @@
   "categories": [
 
     {
-      "nom": {
-      "fr" : "Burgers",
-      "ar" : "برغر",
-      "en" : "Burgers"
-      }
+      "nom": "Burger",
       "emoji": "🍔",
       
       "produits": [
@@ -60,11 +56,7 @@
     },
 
     {
-      "nom": {
-        "fr" : "Tacos",
-        "ar" : "طاكوس",
-        "en" : "Tacos"
-      }
+      "nom": "Tacos",
       "emoji": "🌮",
 
       "produits": [
@@ -92,11 +84,7 @@
     },
     
     {
-      "nom": {
-        "fr" : "Pizza",
-        "ar" : "بيتزا",
-        "en" : "Pizza"
-      }
+      "nom": "Pizza",
       "emoji": "🍕",
 
       "produits": [
