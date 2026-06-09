@@ -78,7 +78,7 @@
           "nom": {
             "fr" : "Tacos Poulet",
             "ar" : "طاكوس دجاج",
-            "en" : "Tchicken Tacos"
+            "en" : "chicken Tacos"
           },
           "prix": 55,
           "promo": 52,
@@ -143,7 +143,57 @@
 }
         
       ]
+    },
+
+       {
+      "nom": {
+        "fr" : "Salade",
+        "ar" : "سلطة",
+        "en" : "Salad"
+      },
+      "emoji": "🍲",
+      
+      "produits": [
+
+        {
+          "id": 6,
+          "nom": {
+            "fr" : "Salade Marocaine",
+            "ar" :  "سلطة مغربية",
+            "en" : "Moroccan Salad"
+          },
+          "prix": 25,
+          "description": {
+            "fr" : "Salade Marocaine au Thon",
+            "ar" : "سلطة مغربية بالطون",
+            "en" : "Moroccan Salad thon"
+          },
+          "image": "images/saladem.png",
+          "disponible": true,
+          "populaire": true
+        },
+
+        {
+          "id": 7,
+          "nom": {
+            "fr" : "Salade Niçoise",
+            "ar" : "سلطة نيسواز",
+            "en" : "Niçoise Salad"
+          },
+          "prix": 35,
+          "description": {
+            "fr" : "Salade aux Oeufs",
+            "ar" : "سلطة بالبيض",
+            "en" : "Salad Eggs"
+          },
+          "image": "images/saladen.jpg",
+          "disponible": true,
+          "populaire": true
+        }
+
+      ]
     }
+
 
   ]
 }
