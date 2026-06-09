@@ -266,3 +266,19 @@ background:#fff;
 box-shadow:0 2px 8px rgba(0,0,0,.1);
 font-size:14px;
 }
+
+.actions .plus{
+background:#27ae60 !important;
+color:white !important;
+}
+
+.actions .moins{
+background:#e74c3c !important;
+color:white !important;
+}
+
+.actions button{
+font-size:20px;
+font-weight:bold;
+min-height:45px;
+}
