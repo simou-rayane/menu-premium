@@ -18,6 +18,27 @@ data.restaurant.nom;
 ).innerText =
 data.restaurant.adresse;
 
+  document.getElementById("btn-itineraire")
+.onclick = () =>
+window.open(data.restaurant.maps);
+
+document.getElementById("btn-site")
+.onclick = () =>
+window.open(data.restaurant.siteweb);
+
+document.getElementById("btn-instagram")
+.onclick = () =>
+window.open(data.restaurant.instagram);
+
+document.getElementById("btn-facebook")
+.onclick = () =>
+window.open(data.restaurant.facebook);
+
+document.getElementById("btn-appel")
+.onclick = () =>
+window.location.href =
+"tel:+" + data.restaurant.telephone;
+
   document
 .getElementById("btn-itineraire")
 .onclick = function(){
