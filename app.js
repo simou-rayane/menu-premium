@@ -18,6 +18,17 @@ data.restaurant.nom;
 ).innerText =
 data.restaurant.adresse;
 
+  document
+.getElementById("btn-itineraire")
+.onclick = function(){
+
+window.open(
+data.restaurant.maps,
+"_blank"
+);
+
+};
+
   document.getElementById(
 "restaurant-phone"
 ).innerText =
