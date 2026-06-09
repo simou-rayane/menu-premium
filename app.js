@@ -16,7 +16,7 @@ data.restaurant.nom;
   document.getElementById(
 "restaurant-address"
 ).innerText =
-data.restaurant.adresse;
+"📍" + data.restaurant.adresse;
 
   document.getElementById(
 "restaurant-phone"
