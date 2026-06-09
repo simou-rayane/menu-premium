@@ -18,6 +18,11 @@ data.restaurant.nom;
 ).innerText =
 data.restaurant.adresse;
 
+  document.getElementById(
+"restaurant-phone"
+).innerText =
+"📞 " + data.restaurant.telephone;
+
   document.getElementById("btn-itineraire")
 .onclick = () =>
 window.open(data.restaurant.maps);
