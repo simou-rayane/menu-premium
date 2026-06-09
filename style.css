@@ -59,6 +59,16 @@ border-radius:20px;
 cursor:pointer;
 }
 
+.plus{
+background:#27ae60;
+color:white;
+}
+
+.moins{
+background:#e74c3c;
+color:white;
+}
+
 .produit{
 
 background:white;
@@ -121,15 +131,7 @@ cursor:pointer;
 
 }
 
-.plus{
-background:#27ae60;
-color:white;
-}
 
-.moins{
-background:#e74c3c;
-color:white;
-}
 
 .panier{
 
