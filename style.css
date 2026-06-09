@@ -61,12 +61,12 @@ cursor:pointer;
 
 .plus{
 background:#27ae60;
-color:#000;
+color:red;
 }
 
 .moins{
 background:#e74c3c;
-color:white;
+color:red;
 }
 
 .produit{
