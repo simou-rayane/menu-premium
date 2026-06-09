@@ -36,13 +36,13 @@ let boutons="";
 data.categories.forEach(cat=>{
 
 boutons += `
-<button onclick="document.getElementById('${cat.nom[langue]}').scrollIntoView()">
+<button onclick="document.getElementById('cat-${cat.emoji}').scrollIntoView()">
 ${cat.emoji} ${cat.nom[langue]}
 </button>
 `;
 
 html += `
-<h2 "id="cat-${cat.emoji}" style="padding:15px">
+<h2 id="cat-${cat.emoji}" style="padding:15px">
 ${cat.emoji} ${cat.nom[langue]}
 </h2>
 `;
@@ -96,13 +96,13 @@ ${prixAffiche}
 
 <button
 class="plus"
-onclick="ajouter('${p.nom}',${p.promo || p.prix})">
+onclick="ajouter('${p.nom.fr}',${p.promo || p.prix})"
 +
 </button>
 
 <button
 class="moins"
-onclick="retirer('${p.nom}')">
+onclick="retirer('${p.nom.fr}')"
 -
 </button>
 
