@@ -23,6 +23,15 @@ data.restaurant.nom;
 ).innerText =
 "📞 " + data.restaurant.telephone;
 
+  if(data.restaurant.livraison === "Oui"){
+
+document.getElementById(
+"restaurant-livraison"
+).innerText =
+"🛵 Livraison disponible";
+
+}
+
   document.getElementById("btn-itineraire")
 .onclick = () =>
 window.open(data.restaurant.maps);
