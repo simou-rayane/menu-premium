@@ -131,8 +131,6 @@ cursor:pointer;
 
 }
 
-
-
 .panier{
 
 position:fixed;
@@ -281,4 +279,11 @@ color:white !important;
 font-size:20px;
 font-weight:bold;
 min-height:45px;
+}
+
+#restaurant-address,
+#restaurant-phone{
+margin-top:5px;
+font-size:16px;
+color:white;
 }
