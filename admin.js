@@ -89,26 +89,32 @@ function ajouterProduit(){
     id:Date.now(),
 
     nom:{
-      fr:nom,
-      ar:nom,
-      en:nom
-    },
+fr:document.getElementById("nomFr").value,
+ar:document.getElementById("nomAr").value,
+en:document.getElementById("nomEn").value
+}
 
     prix:prix,
 
     promo:promo || null,
 
     description:{
-      fr:"",
-      ar:"",
-      en:""
-    },
+fr:document.getElementById("descFr").value,
+ar:document.getElementById("descAr").value,
+en:document.getElementById("descEn").value
+}
 
     image:image,
 
-    disponible:true,
+    disponible:
+document.getElementById(
+"produitDisponible"
+).checked,
 
-    populaire:false
+    populaire:
+document.getElementById(
+"produitPopulaire"
+).checked,
 
   });
 
