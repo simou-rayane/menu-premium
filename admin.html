@@ -80,10 +80,18 @@ Ajouter catégorie
 
 <select id="categorieSelect"></select>
 
-<input
-id="nomProduit"
-placeholder="Nom du produit">
+<input id="nomFr" placeholder="Nom Français">
 
+<input id="nomAr" placeholder="Nom Arabe">
+
+<input id="nomEn" placeholder="Nom Anglais">
+
+<input id="descFr" placeholder="Description Français">
+
+<input id="descAr" placeholder="Description Arabe">
+
+<input id="descEn" placeholder="Description Anglais">
+  
 <input
 id="prixProduit"
 type="number"
@@ -97,6 +105,23 @@ placeholder="Promo">
 <input
 id="imageProduit"
 placeholder="images/photo.jpg">
+
+  <label>
+<input
+type="checkbox"
+id="produitPopulaire">
+
+Produit populaire
+</label>
+
+<label>
+<input
+type="checkbox"
+id="produitDisponible"
+checked>
+
+Disponible
+</label>
 
 <button
 class="ajouter"
