@@ -55,9 +55,9 @@ function ajouterProduit(){
   ).value;
 
   let nom =
-  document.getElementById(
-  "nomProduit"
-  ).value;
+document.getElementById(
+"nomFr"
+).value;
 
   let prix =
   Number(
@@ -92,7 +92,7 @@ function ajouterProduit(){
 fr:document.getElementById("nomFr").value,
 ar:document.getElementById("nomAr").value,
 en:document.getElementById("nomEn").value
-}
+},
 
     prix:prix,
 
@@ -102,7 +102,7 @@ en:document.getElementById("nomEn").value
 fr:document.getElementById("descFr").value,
 ar:document.getElementById("descAr").value,
 en:document.getElementById("descEn").value
-}
+},
 
     image:image,
 
@@ -118,9 +118,13 @@ document.getElementById(
 
   });
 
-  document.getElementById(
-  "nomProduit"
-  ).value="";
+  document.getElementById("nomFr").value="";
+document.getElementById("nomAr").value="";
+document.getElementById("nomEn").value="";
+
+  document.getElementById("descFr").value="";
+document.getElementById("descAr").value="";
+document.getElementById("descEn").value="";
 
   document.getElementById(
   "prixProduit"
