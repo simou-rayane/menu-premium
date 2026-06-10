@@ -212,4 +212,34 @@ function toggleProduit(c,p){
   afficherProduits();
 }
 
+function exporterJSON(){
+
+const contenu =
+JSON.stringify(
+menu,
+null,
+2
+);
+
+const blob =
+new Blob(
+[contenu],
+{
+type:"application/json"
+}
+);
+
+const lien =
+document.createElement("a");
+
+lien.href =
+URL.createObjectURL(blob);
+
+lien.download =
+"menu.json";
+
+lien.click();
+
+}
+
 rafraichirInterface();
