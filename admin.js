@@ -1,3 +1,11 @@
+import {
+db,
+ref,
+set,
+get
+}
+from "./firebase.js";
+
 let menu = {
   restaurant: {
     nom: "Restaurant Atlas"
