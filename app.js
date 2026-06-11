@@ -26,30 +26,14 @@ data.restaurant.nom;
 document.getElementById(
 "restaurant-address"
 ).innerText =
-data.restaurant.adresse;
-
-afficherMenu();
-
-});
-
-data=json;
+"📍"+data.restaurant.adresse;
 
 document.getElementById(
-"restaurant-name"
-).innerText=
-data.restaurant.nom;
-
-  document.getElementById(
-"restaurant-address"
-).innerText =
-"📍" + data.restaurant.adresse;
-
-  document.getElementById(
 "restaurant-phone"
 ).innerText =
 "📞 " + data.restaurant.telephone;
 
-  if(data.restaurant.livraison === "Oui"){
+if(data.restaurant.livraison === "Oui"){
 
 document.getElementById(
 "restaurant-livraison"
@@ -58,7 +42,7 @@ document.getElementById(
 
 }
 
-  document.getElementById("btn-itineraire")
+document.getElementById("btn-itineraire")
 .onclick = () =>
 window.open(data.restaurant.maps);
 
