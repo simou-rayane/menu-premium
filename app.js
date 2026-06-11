@@ -1,10 +1,36 @@
+import {
+db,
+ref,
+get
+}
+from "./firebase.js";
+
 let data;
 let panier={};
 let langue = "fr";
 
-fetch("menu.json")
-.then(r=>r.json())
-.then(json=>{
+get(
+ref(db,"menu")
+)
+
+.then(snapshot=>{
+
+data =
+snapshot.val();
+
+document.getElementById(
+"restaurant-name"
+).innerText =
+data.restaurant.nom;
+
+document.getElementById(
+"restaurant-address"
+).innerText =
+data.restaurant.adresse;
+
+afficherMenu();
+
+});
 
 data=json;
 
