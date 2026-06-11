@@ -254,4 +254,21 @@ lien.click();
 
 }
 
+window.sauvegarderCloud =
+async function(){
+
+await set(
+
+ref(db,"menu"),
+
+menu
+
+);
+
+alert(
+"Menu enregistré en ligne"
+);
+
+}
+
 rafraichirInterface();
