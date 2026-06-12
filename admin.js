@@ -6,12 +6,29 @@ get
 }
 from "./firebase.js";
 
-let menu = {
-  restaurant: {
-    nom: "Restaurant Atlas"
-  },
-  categories: []
-};
+let menu;
+
+get(ref(db,"menu"))
+.then(snapshot=>{
+
+menu = snapshot.val();
+
+if(!menu.categories){
+menu.categories = [];
+}
+  
+rafraichirInterface();
+
+});
+
+function sauvegarderFirebase(){
+
+set(
+ref(db,"menu"),
+menu
+);
+
+}
 
 function rafraichirInterface(){
 
@@ -52,7 +69,9 @@ function ajouterCategorie(){
   "categorieNom"
   ).value="";
 
-  rafraichirInterface();
+  sauvegarderFirebase();
+
+rafraichirInterface();
 }
 
 function ajouterProduit(){
@@ -146,7 +165,9 @@ document.getElementById("descEn").value="";
   "imageProduit"
   ).value="";
 
-  afficherProduits();
+  sauvegarderFirebase();
+
+afficherProduits();
 }
 
 function afficherProduits(){
@@ -221,7 +242,9 @@ function toggleProduit(c,p){
   .produits[p]
   .disponible;
 
-  afficherProduits();
+  sauvegarderFirebase();
+
+afficherProduits();
 }
 
 function exporterJSON(){
