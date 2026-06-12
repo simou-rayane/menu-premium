@@ -13,6 +13,20 @@ get(ref(db,"menu"))
 
 menu = snapshot.val();
 
+if(!menu){
+
+menu = {
+
+restaurant:{
+nom:"Restaurant Atlas"
+},
+
+categories:[]
+
+};
+
+}
+
 if(!menu.categories){
 menu.categories = [];
 }
@@ -21,9 +35,9 @@ rafraichirInterface();
 
 });
 
-function sauvegarderFirebase(){
+async function sauvegarderFirebase(){
 
-set(
+await set(
 ref(db,"menu"),
 menu
 );
@@ -69,9 +83,12 @@ function ajouterCategorie(){
   "categorieNom"
   ).value="";
 
-  sauvegarderFirebase();
+  sauvegarderFirebase()
+.then(()=>{
 
 rafraichirInterface();
+
+});
 }
 
 function ajouterProduit(){
@@ -165,9 +182,12 @@ document.getElementById("descEn").value="";
   "imageProduit"
   ).value="";
 
-  sauvegarderFirebase();
+  sauvegarderFirebase()
+.then(()=>{
 
 afficherProduits();
+
+});
 }
 
 function afficherProduits(){
@@ -293,5 +313,3 @@ alert(
 );
 
 }
-
-rafraichirInterface();
