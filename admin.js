@@ -16,14 +16,13 @@ menu = snapshot.val();
 if(!menu){
 
 menu = {
-
 restaurant:{
 nom:"Restaurant Atlas"
 },
-
 categories:[]
-
 };
+
+set(ref(db,"menu"), menu);
 
 }
 
