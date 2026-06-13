@@ -27,6 +27,17 @@ categories:[]
 
 }
 
+if(!menu){
+
+menu = {
+restaurant:{
+nom:"Restaurant Atlas"
+},
+categories:[]
+};
+
+}
+
 if(!menu.categories){
 menu.categories = [];
 }
