@@ -26,17 +26,6 @@ set(ref(db,"menu"), menu);
 
 }
 
-if(!menu){
-
-menu = {
-restaurant:{
-nom:"Restaurant Atlas"
-},
-categories:[]
-};
-
-}
-
 if(!menu.categories){
 menu.categories = [];
 }
@@ -323,3 +312,15 @@ alert(
 );
 
 }
+
+window.ajouterCategorie =
+ajouterCategorie;
+
+window.ajouterProduit =
+ajouterProduit;
+
+window.exporterJSON =
+exporterJSON;
+
+window.toggleProduit =
+toggleProduit;
