@@ -18,6 +18,14 @@ ref(db,"menu")
 data =
 snapshot.val();
 
+  console.log("Firebase chargé");
+console.log(data);
+  
+  if(!data){
+console.error("Aucune donnée trouvée dans Firebase");
+return;
+}
+
 document.getElementById(
 "restaurant-name"
 ).innerText =
@@ -350,3 +358,9 @@ document.body.dir="ltr";
 afficherMenu();
 
 }
+
+window.ajouter = ajouter;
+window.retirer = retirer;
+window.commander = commander;
+window.changerLangue = changerLangue;
+window.toggleDarkMode = toggleDarkMode;
