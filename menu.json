@@ -1,1 +1,40 @@
-
+{
+  "menu": {
+    "categories": [
+      {
+        "emoji": "🍕",
+        "nom": {
+          "fr": "Pizza",
+          "ar": "بيتزا",
+          "en": "Pizza"
+        },
+        "produits": [
+          {
+            "id": 1,
+            "nom": {
+              "fr": "Pizza Margherita",
+              "ar": "بيتزا مرغريتا",
+              "en": "Pizza Margherita"
+            },
+            "description": {
+              "fr": "Pizza Margherita",
+              "ar": "بيتزا مرغريتا",
+              "en": "Pizza Margherita"
+            },
+            "prix": 50,
+            "promo": 45,
+            "image": "images/pizza.jpg",
+            "disponible": true,
+            "populaire": true
+          }
+        ]
+      }
+    ],
+    "restaurant": {
+      "nom": "Restaurant Atlas",
+      "telephone": "212610164989",
+      "adresse": "Casablanca",
+      "livraison": "Oui"
+    }
+  }
+}
