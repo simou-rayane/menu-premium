@@ -77,13 +77,13 @@ data.categories.forEach(cat=>{
 
 boutons += `
 <button onclick="document.getElementById('cat-${cat.emoji}').scrollIntoView()">
-${cat.emoji} ${cat.nom[langue]}
+${cat.emoji} ${cat.nom}
 </button>
 `;
 
 html += `
 <h2 id="cat-${cat.emoji}" style="padding:15px">
-${cat.emoji} ${cat.nom[langue]}
+${cat.emoji} ${cat.nom}
 </h2>
 `;
 
